@@ -7,3 +7,5 @@
 # Build files
 build/
 .gradle/
+out/
+generated_src/
