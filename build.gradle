@@ -13,6 +13,7 @@ apply plugin: "java"
 apply plugin: "idea"
 
 apply plugin: "org.inferred.processors"
+apply plugin: 'application'
 
 compileJava.sourceCompatibility '1.8'
 compileJava.targetCompatibility '1.8'
@@ -28,5 +29,7 @@ dependencies {
   compile "org.slf4j:slf4j-log4j12:1.7.25"
   compile "com.opencsv:opencsv:3.9"
 
-  processor "org.immutables:value:2.1.11"
+  processor "org.immutables:value:2.4.4"
 }
+
+mainClassName = "net.beardlabs.dircompare.script.PreScanDirs"
